@@ -3,12 +3,6 @@
     <meta charset="UTF-8" />
     <title>Contact Book</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json" />
-<script type="module">
-  import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-  const el = document.createElement('pwa-update');
-  document.body.appendChild(el);
-</script>
 <link rel="manifest" href="manifest.json">
 <script type="module">
   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
@@ -95,11 +89,6 @@
         renderContacts(filtered);
       }
     </script>
-    <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('pwabuilder-sw.js');
-  }
-</script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
